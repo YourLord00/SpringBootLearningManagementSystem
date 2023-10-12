@@ -40,7 +40,7 @@ public class StudentManagementApplication {
 	@Bean
 	public ShiroFilterChainDefinition shiroFilterChainDefinition() {
 		DefaultShiroFilterChainDefinition chainDefinition = new DefaultShiroFilterChainDefinition();
-		chainDefinition.addPathDefinition("**", "authcBasic");
+		chainDefinition.addPathDefinition("/**", "authcBasic");
 		return chainDefinition;
 	}
 
